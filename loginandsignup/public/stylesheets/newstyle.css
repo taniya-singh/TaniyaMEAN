@@ -1,0 +1,107 @@
+.header
+{
+    
+    height:115px;
+    margin-top: 2px;
+    padding-top: 5px;
+    background-image: url("/images/header2.jpg");
+    background-size: 1000px 110px;
+    background-repeat: no-repeat; 
+    padding-left: 30px;
+    margin-left: 30px;
+
+}
+.sidebar
+{
+    background-color:lightpink;
+    width:150px;
+    height:700px;
+
+}
+.content
+{
+    height:650px;
+    margin-left: 192px;
+    background-color: lightgreen;
+    margin-top: 102px;
+
+}
+.registertable
+{
+    
+margin-left: 700px;
+width:500px;
+}
+
+.table
+{
+border: dashed;
+margin-left: 80px;
+width:500px;
+}
+
+.loginform
+{
+   padding-top: 50px;
+   padding-left: 20px;
+   width: 300px;
+}
+.imgheader
+{
+    margin-left: 800px;
+    font-size: 25px;
+}
+.imageloader
+{
+    padding-left: 200px;
+}
+.panel
+{
+    padding-bottom: 30px;
+    width: 800px;
+    margin-left: 150px;
+}
+.row
+{
+    width: 300px;
+    padding-left: 50px;
+}
+.firstpage
+{
+    background-image: url("/images/shopping1.jpeg");
+    background-repeat: no-repeat; 
+    background-size:1260px 700px;
+    height: 700px;
+    /*background-color: #fcecdf;*/
+}
+.displayproducts
+{
+
+}
+.signup
+{
+    width: 700px;
+    margin-left: 200px;
+
+}
+.userprofile
+{
+    background-color: white;
+    height: 300px;
+    width: 1200px;
+}
+
+.navbar
+{
+    background-color: black;
+    height: 500px;
+    width: 200px;
+    float: left;
+
+}
+.profilepage
+{
+    padding-top: 100px;
+    width: 900px;
+    float: right;
+}

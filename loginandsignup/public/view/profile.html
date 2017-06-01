@@ -1,0 +1,102 @@
+<div class="profile">
+<div class="navbar">
+      <div id="wrapper" class="active">
+            
+          
+      <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                 <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+            </ul>
+              <ul class="sidebar-nav" id="sidebar">     
+                <li><a href="#page1">Page1</a></li>
+                <li><a href="#page2">Page2</a></li>
+              </ul>
+            </div>
+         </div>
+  </div>
+  <div class="profilepage">      
+      <form class="form-horizontal" name="form" ng-submit="signup()"  >
+              
+                <div class="form-group">
+                    <!-- <label for="firstName" class="col-sm-3 control-label">Full Name</label> -->
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" ng-model="profiledata.name" ng-keypress="myFunct($event, profiledata.name)"  placeholder="Full Name" class="form-control" autofocus required>
+                        {{count}}
+                        <span class="help-block">First Name,Last Name  eg.:  Harry,Smith</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                   <!--  <label for="email" class="col-sm-3 control-label">Email</label>
+                    --> <div class="col-sm-9">
+                        <input type="email" id="email" ng-keypress="count = count + 1" ng-init="count=0" ng-model="profiledata.email" placeholder="Email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                   <!--  <label for="password" class="col-sm-3 control-label">Password</label>
+                    --> <div class="col-sm-9">
+                        <input type="password" id="password" ng-keypress="count = count + 1" ng-init="count=0" ng-model="profiledata.password"  placeholder="Password" class="form-control" required>
+                    </div>
+                   </div> 
+
+                 <div class="form-group">
+                   <!--  <label for="password" class="col-sm-3 control-label">Password</label>
+                    --> <div class="col-sm-9">
+                        <input type="number" id="contactno" ng-keypress="count = count + 1" ng-init="count=0" ng-model="profiledata.contactno"  placeholder="contactno" class="form-control" required>
+                    </div>   
+                </div>
+                <div class="form-group">
+                   <!--  <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                    --> <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control"  ng-model="profiledata.dob" required>
+                    </div>
+                </div>
+               
+                
+                <div class="form-group">
+                    <div class="col-sm-9 ">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </div>
+
+                </form>
+                <div class="row show-hide-message" ng-show="successmsg">
+                  <div class="alert alert-success" style="font-size: 12px;">{{successmsg}}</div> </div>
+
+                   <div class="row show-hide-message" ng-show="errormsg">
+                  <div class="alert alert-danger" style="font-size: 12px;">{{errormsg}}</div>
+                  </div>
+         
+</div>
+</div>
+
+<script>
+  $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+});
+</script>                     
+
+<!-- <button class="btn btn-info" ng-click="logoutbtn()" style="margin-left: 120px;margin-bottom:30px;">Logout</button> -->
+<!--  <form  ng-controller="profilectrl as up" name="up.upload_form" ng-submit="up.submit()" style="margin-left: 800px;">
+	<table>
+		<tr> 
+			<td>
+				Image thumbnail: 
+			</td> 
+		</tr>
+		<tr>
+		 <td>
+            <img style=" padding-left: 40px; width:250px; height: 150px; padding-top: 20px;" ng-show="!!up.file" ngf-thumbnail="up.file || '/getimage'"/>
+            
+            <i ng-show="up.upload_form.file.$error.required">*required</i><br>
+            <i ng-show="up.upload_form.file.$error.maxSize">File too large 
+            {{up.file.size / 1000000|number:1}}MB: max 20M</i>
+            </td></tr>
+             <tr> <td> <button type="submit">submit</button> </td>
+             <td> <input type="file" ngf-select ng-model="up.file" name="file" ngf-pattern="'image/*'" accept="image/*" ngf-max-size="20MB" />  </td>
+             </tr>	
+            <tr> <td> {{msg}} </td> </tr>
+             </table>
+
+ </form> -->

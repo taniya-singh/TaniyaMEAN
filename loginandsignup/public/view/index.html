@@ -1,0 +1,47 @@
+<!DOCTYPE >
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.3/angular-resource.min.js"></script> -->
+
+	<script src="javascripts/angularapp.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/checklist-model/0.11.0/checklist-model.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/2.1.1/angular-toastr.min.js"></script>
+    <script src="javascripts/ng-table.js"></script>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/newstyle.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
+
+	<title>loginsignup</title>
+</head>
+
+<body  ng-app="myApp">
+
+<div class="header">
+	
+	
+	<a href="#login" class="btn btn-info">Login here</a>
+	<a href="#signup"  class="btn btn-info">SignUp First</a>
+	
+</div>
+
+<div class="firstpage">
+<ui-view></ui-view>
+</div>
+
+<div class="footer" style="background-color:turquoise;height: 40px; width: 1250px; margin-left: 10px;padding-left: 20px;">
+	
+	
+	<a href="" class="btn btn-info">Facebook</a>
+	<a href="" class="btn btn-info">Twitter</a>
+</div> 
+</body>
+
+</html>
